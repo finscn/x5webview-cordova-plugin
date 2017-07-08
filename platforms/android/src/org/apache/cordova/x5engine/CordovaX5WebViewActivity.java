@@ -12,7 +12,7 @@ import org.apache.cordova.CordovaActivity;
 import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.CordovaWebViewImpl;
 
-import io.cordova.hellocordova.R;
+// import io.cordova.hellocordova.R;
 
 
 /**
