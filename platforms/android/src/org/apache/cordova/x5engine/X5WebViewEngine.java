@@ -149,11 +149,13 @@ public class X5WebViewEngine implements CordovaWebViewEngine {
         settings.setLayoutAlgorithm(LayoutAlgorithm.NORMAL);
 
         settings.setRenderPriority(WebSettings.RenderPriority.HIGH);
-        settings.setPluginState(WebSettings.PluginState.ON_DEMAND);
-        
-        settings.setAllowFileAccess(true);
-        settings.setAllowFileAccessFromFileURLs(true);
-        settings.setAllowUniversalAccessFromFileURLs(true);
+//        settings.setPluginState(WebSettings.PluginState.ON_DEMAND);
+//        
+//        settings.setAllowFileAccess(true);
+//        settings.setAllowFileAccessFromFileURLs(true);
+//        settings.setAllowUniversalAccessFromFileURLs(true);
+//
+        settings.setCacheMode(WebSettings.LOAD_NO_CACHE);
 
         // Set the nav dump for HTC 2.x devices (disabling for ICS, deprecated entirely for Jellybean 4.2)
         try {
@@ -214,7 +216,7 @@ public class X5WebViewEngine implements CordovaWebViewEngine {
         // Fix for CB-2282
         settings.setAppCacheMaxSize(5 * 1048576);
         settings.setAppCachePath(databasePath);
-        settings.setAppCacheEnabled(true);
+        settings.setAppCacheEnabled(false);
 
         //
         settings.setUseWideViewPort(true);
