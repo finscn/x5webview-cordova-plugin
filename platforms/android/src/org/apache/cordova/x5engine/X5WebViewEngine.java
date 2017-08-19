@@ -150,6 +150,10 @@ public class X5WebViewEngine implements CordovaWebViewEngine {
 
         settings.setRenderPriority(WebSettings.RenderPriority.HIGH);
         settings.setPluginState(WebSettings.PluginState.ON_DEMAND);
+        
+        settings.setAllowFileAccess(true);
+        settings.setAllowFileAccessFromFileURLs(true);
+        settings.setAllowUniversalAccessFromFileURLs(true);
 
         // Set the nav dump for HTC 2.x devices (disabling for ICS, deprecated entirely for Jellybean 4.2)
         try {
