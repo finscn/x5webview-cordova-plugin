@@ -188,6 +188,18 @@ public class X5WebChromeClient extends WebChromeClient {
 //        parentEngine.getCordovaWebView().showCustomView(view, callback);
 //    }
 
+// TODO ???
+//    public void onShowCustomView(View view,final IX5WebChromeClient.CustomViewCallback callback) {
+//        // IX5WebChromeClient.CustomViewCallback casts to webkit.WebChromeClient.CustomViewCallback
+//        // By Jeremy on 2017/5/18.
+//        parentEngine.getCordovaWebView().showCustomView(view, new android.webkit.WebChromeClient.CustomViewCallback() {
+//            @Override
+//          public void onCustomViewHidden() {
+//                callback.onCustomViewHidden();
+//          }
+//        });
+//    }
+
     public void onHideCustomView() {
         parentEngine.getCordovaWebView().hideCustomView();
     }
