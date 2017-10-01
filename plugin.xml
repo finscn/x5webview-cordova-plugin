@@ -12,7 +12,8 @@
 
     <engines>
         <engine name="cordova-android" version=">=4"/>
-        <engine name="cordova-plugman" version=">=5.2.0"/><!-- needed for gradleReference support -->
+        <engine name="cordova-plugman" version=">=5.2.0"/>
+        <!-- needed for gradleReference support -->
     </engines>
 
     <!-- android -->
@@ -22,7 +23,7 @@
             <preference name="webView" value="org.apache.cordova.x5engine.X5WebViewEngine"/>
             <preference name="appUserAgent" value="x5webview"/>
             <preference name="android-minSdkVersion" value="15" />
-	    <allow-navigation href="*"></allow-navigation>
+	        <allow-navigation href="*"></allow-navigation>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/*">
@@ -31,7 +32,6 @@
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
             <uses-permission android:name="android.permission.INTERNET" />
             <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-	    
         </config-file>
 
         <source-file src="platforms/android/src/org/apache/cordova/x5engine/X5CookieManager.java" target-dir="src/org/apache/cordova/x5engine"/>
@@ -43,8 +43,8 @@
         <source-file src="platforms/android/src/org/apache/cordova/x5engine/X5WebViewClient.java" target-dir="src/org/apache/cordova/x5engine"/>
         <source-file src="platforms/android/src/org/apache/cordova/x5engine/X5WebViewEngine.java" target-dir="src/org/apache/cordova/x5engine"/>
 
-        <source-file src="platforms/android/libs/tbs_sdk_thirdapp_v3.3.0.1045_43300_sharewithdownload_withoutGame_obfs_20170605_170212.jar" target-dir="libs"/>
-	<source-file src="platforms/android/libs/armeabi/liblbs.so" target-dir="libs/armeabi"/>
+        <source-file src="platforms/android/libs/tbs_sdk_thirdapp_v3.5.0.1004_43500_sharewithdownload_withoutGame_obfs_20170801_113025.jar" target-dir="libs"/>
+        <source-file src="platforms/android/libs/armeabi/liblbs.so" target-dir="libs/armeabi"/>
 
     </platform>
 
